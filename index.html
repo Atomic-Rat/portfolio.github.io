@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Studio - Minimal Design</title>
+    <link rel="stylesheet" href="tooplate-graphite-creative.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo-area" onclick="scrollToTop(); return false;">
+                <div class="logo-vector">RM</div>
+                <div class="logo-text">
+                    <h1>Ryan Mountford</h1>
+                    <p>Technical Designer</p>
+                </div>
+            </a>
+            <nav>
+                <a href="#home" class="active">Home</a>
+                <a href="#services">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="section-hero">
+            <div class="hero-container">
+                <div class="hero-left">
+                    <div class="hero-line"></div>
+                    <h2>Welcome!</h2>
+                    <p>Hey there, I'm Ryan, a technical designer from the North East of England. I specialise in Unreal Engine and have been using it for over <b>5 years</b> now! I've made plugins, tools, and games and have a passion for accessibility and programming!</p>
+                    <p>See below for my online portfolio:</p>
+                    <a href="#contact" class="cta-button">Get in touch!</a>
+                </div>
+                <div class="slider-container">
+                    <div class="slide active" data-fallback="Design Workspace">
+                        <img src="images/tooplate-creative-01.jpg" alt="Design workspace">
+                    </div>
+                    <div class="slide" data-fallback="Creative Work">
+                        <img src="images/tooplate-creative-02.jpg" alt="Creative work">
+                    </div>
+                    <div class="slide" data-fallback="Web Design">
+                        <img src="images/tooplate-creative-03.jpg" alt="Web design">
+                    </div>
+                    <div class="slider-dots">
+                        <div class="dot active" onclick="currentSlide(0)"></div>
+                        <div class="dot" onclick="currentSlide(1)"></div>
+                        <div class="dot" onclick="currentSlide(2)"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="section-services">
+            <div class="services-container">
+                <h2 class="section-title">My Skills</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-number">.01</div>
+                        <h3>Unreal Engine</h3>
+                        <p>Confident in Unreal Engine, I am able to rapidly plan and execute tasks. Due to my deep knowledge of the engine.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-number">.02</div>
+                        <h3>C++</h3>
+                        <p>Clean, commented code that empowers a project. I have created multiple plugins and tools for developers in Unreal Engine.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-number">.03</div>
+                        <h3>Leadership</h3>
+                        <p>As 'Lead Technical Designer' at DINK I have delivered stable builds, ran playtests, analysed feedback, and enforced a standard of code.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-number">.04</div>
+                        <h3>Design</h3>
+                        <p>Graduated with a masters in game design, I love considering how to improve the player's experience while prototyping.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-number">.05</div>
+                        <h3>Optimisation & refactoring</h3>
+                        <p>I have refactored core mechanics to provide more flexibility and suitability. Used built in tools to find issues in performance.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-number">.06</div>
+                        <h3>Godot</h3>
+                        <p>My enjoyment of game development has lead my to trying other engines. I am relatively comfortable in Godot and have done game jams using the engine.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio" class="section-portfolio">
+            <div class="portfolio-container">
+                <h2 class="section-title">Recent Work</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="images/tooplate-creative-21.png" alt="Project Alpha" loading="lazy">
+                        <div class="portfolio-label">
+                            <h3>Accessibility Toolkit</h3>
+                            <p>Accessibility Plugin</p>
+                        </div>
+                        <div class="portfolio-data" hidden>
+                            <p class="description">A plugin designed to make the essential task of making your game accessible easier for developers.</p>
+                            <ul class="features">
+                                <li>Plug and play</li>
+                                <li>Demo showroom</li>
+                                <li>Fully documented</li>
+                                <li>Video demos</li>
+                            </ul>
+                            <a href="https://www.fab.com/listings/86b3b74f-7d8c-4ce3-9803-5d692ff124a4?lang=en" class="visit-url">Get for free!</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/tooplate-creative-22.png" alt="Project Beta" loading="lazy">
+                        <div class="portfolio-label">
+                            <h3>Edge Rat</h3>
+                            <p>Game Jam</p>
+                        </div>
+                        <div class="portfolio-data" hidden>
+                            <p class="description">A game jam made in Godot. Entirely controlled with the mouse and with no text on the in game HUD. This jam was a welcome challenge for me!</p>
+                            <ul class="features">
+                                <li>Godot engine</li>
+                                <li>Challenges</li>
+                                <li>Runs in browser</li>
+                                <li>Featuring assets</li>
+                            </ul>
+                            <a href="https://atomic-rat.itch.io/edgerat" rel="nofollow" class="visit-url">Visit Site</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/tooplate-creative-23.png" alt="Project Gamma" loading="lazy">
+                        <div class="portfolio-label">
+                            <h3>That's the Spirit!</h3>
+                            <p>Game Jam</p>
+                        </div>
+                        <div class="portfolio-data" hidden>
+                            <p class="description">A jam done for DrinkDevs. A pun based game where you prepare drinks for a colourful cast of monsters. Each drink is a pun.</p>
+                            <ul class="features">
+                                <li>Short jam</li>
+                                <li>Team working</li>
+                                <li>Unreal Engine</li>
+                            </ul>
+                            <a href="https://atomic-rat.itch.io/thats-the-spirit" rel="nofollow" class="visit-url">Visit Site</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/tooplate-creative-24.jpg" alt="Companion AI" loading="lazy">
+                        <div class="portfolio-label">
+                            <h3>Companion AI</h3>
+                            <p>Plugin Development</p>
+                        </div>
+                        <div class="portfolio-data" hidden>
+                            <p class="description">This Companion AI starter pack will allow you to set up multiple AI in your level at the click of a button that the player can interact with, command, and work alongside. These friendly AI will accompany your player through their game.</p>
+                            <ul class="features">
+                                <li>Planning and client work</li>
+                                <li>Replication</li>
+                                <li>UI</li>
+                                <li>Client work</li>
+                            </ul>
+                            <a href="https://www.youtube.com/watch?v=M_Yd8fBhdcg" rel="nofollow" class="visit-url">View Trailer</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/tooplate-creative-25.jpg" alt="Project Epsilon" loading="lazy">
+                        <div class="portfolio-label">
+                            <h3>Quest System</h3>
+                            <p>System Development</p>
+                        </div>
+                        <div class="portfolio-data" hidden>
+                            <p class="description">A system that .</p>
+                            <ul class="features">
+                                <li>Developer tool</li>
+                                <li>Friendly to novice developers</li>
+                                <li>Tutorialised</li>
+                            </ul>
+                            <a href="https://www.fab.com/listings/933f855b-c38d-43de-bc7c-c9a89e6c683f" rel="nofollow" class="visit-url">Visit Storepage</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/tooplate-creative-26.jpg" alt="Project Zeta" loading="lazy">
+                        <div class="portfolio-label">
+                            <h3>The Department</h3>
+                            <p>Optimisation & Bug Fixes</p>
+                        </div>
+                        <div class="portfolio-data" hidden>
+                            <p class="description">Working closely with COPA I optimised and implemented bug fixes for their flagship game The Department.</p>
+                            <ul class="features">
+                                <li>Memory optimisation</li>
+                                <li>Documented bug fixes</li>
+                                <li>Team working</li>
+                            </ul>
+                            <a href="https://store.steampowered.com/app/1980540/The_Department__Trosedd/" class="visit-url">View Storepage</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section-about">
+            <h2 class="section-title">History</h2>
+            <div class="about-container">
+                <div class="about-content">
+                    <h3>My Background</h3>
+                    <p>Growing up in the North East I was always glued to my parent's old consoles. I had been enthralled with the worlds of Hyrule and Peach's castle since a very young age.</p>
+                    <p>I knew that I wanted to be a game developer, so I studied game development in college and game design at university, where I got a masters at a first degree.</p>
+                    <p>During my time learning design, I discovered my affinity for programming. Unreal Engine's blueprints were a great introduction but I found myself enjoying them more than my peers at university.</p>
+                    <p>Since then I've been developing my skills professionally in the workplace by moving onto C++ and when I'm home I'll work on personal projects in Godot.</p>
+                </div>
+                <div class="about-blocks">
+                    <div class="about-block">
+                        <h4>Dink 2025 - Current</h4>
+                        <p>I currently work for Dink as their Lead Technical Designer. Producing stable code, perfromant builds, tracking issues, and writing documents to save our staff time.</p>
+                    </div>
+                    <div class="about-block">
+                        <h4>Freelance 2024 - 2025</h4>
+                        <p>Worked with Dink and COPA Gaming to produce plugins such as the <a href="https://www.fab.com/listings/86b3b74f-7d8c-4ce3-9803-5d692ff124a4?lang=en" target="_blank">Unreal Accessibility toolkit</a>, a replicated <a href="https://www.fab.com/listings/65b96708-16d6-4cee-9605-ab6ef37fbf0e" target="_blank">AI companion</a>, and a <a href="https://www.fab.com/listings/933f855b-c38d-43de-bc7c-c9a89e6c683f" target="_blank">quest system</a>.</p>
+                    </div>
+                    <div class="about-block">
+                        <h4>Omniplay Games 2023 - 2024</h4>
+                        <p>Starting as an intern, I worked with Omniplay to create <i>internal projects</i> and push updates for their existing game <a href="https://store.steampowered.com/app/1782190/Farlife/" target="_blank">Farlife</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section-contact">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Thank you for reading my portfolio!</p>
+                    <p>If you're interested in talking to me, you can find me on LinkedIn or my Email. On the right is a showcase of my best University projects going back to 2023.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <label>Email</label>
+                            <a href="mailto:mountfordryan0@gmail.com"><span class="__cf_email__" data-cfemail="ff979a939390bf9c8d9a9e8b96899a8c8b8a9b9690d19c9092">mountfordryan0@gmail.com</span></a>
+                        </div>
+                    <div class="contact-item">
+                        <label>LinkTree</label>
+                        <a href="https://linktr.ee/ryanmountford" target="_blank"><span class="__cf_email__" data-cfemail="ff979a939390bf9c8d9a9e8b96899a8c8b8a9b9690d19c9092">Links to my socials</span></a>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="hero-container">
+                  <a href="https://youtu.be/PPZCoBIVkQ4" target="_blank"><div  class="portfolio-item">
+                        <img src="images/YTThumb.webp" alt="Showcase" loading="lazy">
+                        <div class="portfolio-label">
+                            <h3>University Showcase</h3>
+                            <p>On YouTube</p>
+                 </a></div>
+                
+                    <!--<div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    -->
+                </form>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO MODAL -->
+        <div id="portfolioModal" class="portfolio-modal">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closePortfolioModal()">&times;</button>
+                <img id="modalImage" src="" alt="" class="modal-image">
+                <div class="modal-details">
+                    <h3 id="modalTitle"></h3>
+                    <p id="modalCategory"></p>
+                    <p id="modalDescription"></p>
+                    <ul id="modalFeatures"></ul>
+                    <a href="#" id="modalVisitBtn" class="modal-visit-btn" target="_blank">Visit the Site</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+	<script src="tooplate-graphite-script.js"></script>
+</body>
+</html>
